@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2BF09BE2A1C56D400D2270A /* Hotel_PrincessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09BD2A1C56D400D2270A /* Hotel_PrincessApp.swift */; };
+		F2BF09C22A1C56D700D2270A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09C12A1C56D700D2270A /* Assets.xcassets */; };
+		F2BF09C52A1C56D700D2270A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09C42A1C56D700D2270A /* Preview Assets.xcassets */; };
+		F2BF09CF2A1C56D700D2270A /* Hotel_PrincessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09CE2A1C56D700D2270A /* Hotel_PrincessTests.swift */; };
+		F2BF09D92A1C56D700D2270A /* Hotel_PrincessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09D82A1C56D700D2270A /* Hotel_PrincessUITests.swift */; };
+		F2BF09DB2A1C56D700D2270A /* Hotel_PrincessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09DA2A1C56D700D2270A /* Hotel_PrincessUITestsLaunchTests.swift */; };
+		F2BF09F12A1CA2C900D2270A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF09F02A1CA2C900D2270A /* Alamofire */; };
+		F2BF09F32A1CAEAD00D2270A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09F22A1CAEAD00D2270A /* SplashView.swift */; };
+		F2BF09F52A1CB8EA00D2270A /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09F42A1CB8EA00D2270A /* StartView.swift */; };
+		F2BF09F72A1CB97500D2270A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09F62A1CB97500D2270A /* MainView.swift */; };
+		F2BF09F92A1CBA8F00D2270A /* ChkinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF09F82A1CBA8F00D2270A /* ChkinView.swift */; };
+		F2BF09FE2A1CCB9F00D2270A /* YUniverse-B.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09FC2A1CCB9F00D2270A /* YUniverse-B.otf */; };
+		F2BF09FF2A1CCB9F00D2270A /* YUniverse-B.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09FC2A1CCB9F00D2270A /* YUniverse-B.otf */; };
+		F2BF0A002A1CCB9F00D2270A /* YUniverse-B.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09FC2A1CCB9F00D2270A /* YUniverse-B.otf */; };
+		F2BF0A012A1CCB9F00D2270A /* YUniverse-L.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09FD2A1CCB9F00D2270A /* YUniverse-L.otf */; };
+		F2BF0A022A1CCB9F00D2270A /* YUniverse-L.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09FD2A1CCB9F00D2270A /* YUniverse-L.otf */; };
+		F2BF0A032A1CCB9F00D2270A /* YUniverse-L.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF09FD2A1CCB9F00D2270A /* YUniverse-L.otf */; };
+		F2BF0A082A1D03C200D2270A /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A072A1D03C200D2270A /* RoomController.swift */; };
+		F2BF0A112A1D230200D2270A /* CheckinDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A102A1D230200D2270A /* CheckinDTO.swift */; };
+		F2BF0A122A1D230200D2270A /* CheckinDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A102A1D230200D2270A /* CheckinDTO.swift */; };
+		F2BF0A132A1D230200D2270A /* CheckinDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A102A1D230200D2270A /* CheckinDTO.swift */; };
+		F2BF0A192A1D252500D2270A /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A182A1D252500D2270A /* UnderlineTextFieldView.swift */; };
+		F2BF0A1A2A1D252500D2270A /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A182A1D252500D2270A /* UnderlineTextFieldView.swift */; };
+		F2BF0A1B2A1D252500D2270A /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A182A1D252500D2270A /* UnderlineTextFieldView.swift */; };
+		F2BF0A1D2A2643FB00D2270A /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A1C2A2643FB00D2270A /* MusicView.swift */; };
+		F2BF0A1E2A2643FB00D2270A /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A1C2A2643FB00D2270A /* MusicView.swift */; };
+		F2BF0A1F2A2643FB00D2270A /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A1C2A2643FB00D2270A /* MusicView.swift */; };
+		F2BF0A212A265BCA00D2270A /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF0A202A265BCA00D2270A /* CinzelDecorative-Bold.ttf */; };
+		F2BF0A222A265BCA00D2270A /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF0A202A265BCA00D2270A /* CinzelDecorative-Bold.ttf */; };
+		F2BF0A232A265BCA00D2270A /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2BF0A202A265BCA00D2270A /* CinzelDecorative-Bold.ttf */; };
+		F2BF0A252A2667E600D2270A /* RoomStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A242A2667E600D2270A /* RoomStatus.swift */; };
+		F2BF0A262A2667E600D2270A /* RoomStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A242A2667E600D2270A /* RoomStatus.swift */; };
+		F2BF0A272A2667E600D2270A /* RoomStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A242A2667E600D2270A /* RoomStatus.swift */; };
+		F2BF0A292A28E86900D2270A /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A282A28E86900D2270A /* Guest.swift */; };
+		F2BF0A2A2A28E86900D2270A /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A282A28E86900D2270A /* Guest.swift */; };
+		F2BF0A2B2A28E86900D2270A /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A282A28E86900D2270A /* Guest.swift */; };
+		F2BF0A2D2A28EA8E00D2270A /* TimerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A2C2A28EA8E00D2270A /* TimerRequest.swift */; };
+		F2BF0A312A28EAA900D2270A /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A302A28EAA900D2270A /* AirQuality.swift */; };
+		F2BF0A322A28EAA900D2270A /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A302A28EAA900D2270A /* AirQuality.swift */; };
+		F2BF0A332A28EAA900D2270A /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A302A28EAA900D2270A /* AirQuality.swift */; };
+		F2BF0A382A2AE0BE00D2270A /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A372A2AE0BE00D2270A /* SongList.swift */; };
+		F2BF0A392A2AE0BE00D2270A /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A372A2AE0BE00D2270A /* SongList.swift */; };
+		F2BF0A3A2A2AE0BE00D2270A /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A372A2AE0BE00D2270A /* SongList.swift */; };
+		F2BF0A3C2A2AE4C000D2270A /* DesignModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A3B2A2AE4C000D2270A /* DesignModifier.swift */; };
+		F2BF0A3D2A2AE4C000D2270A /* DesignModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A3B2A2AE4C000D2270A /* DesignModifier.swift */; };
+		F2BF0A3E2A2AE4C000D2270A /* DesignModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF0A3B2A2AE4C000D2270A /* DesignModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2BF09CB2A1C56D700D2270A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2BF09B22A1C56D400D2270A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BF09B92A1C56D400D2270A;
+			remoteInfo = "Hotel Princess";
+		};
+		F2BF09D52A1C56D700D2270A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2BF09B22A1C56D400D2270A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BF09B92A1C56D400D2270A;
+			remoteInfo = "Hotel Princess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2BF09BA2A1C56D400D2270A /* Hotel Princess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hotel Princess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BF09BD2A1C56D400D2270A /* Hotel_PrincessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel_PrincessApp.swift; sourceTree = "<group>"; };
+		F2BF09C12A1C56D700D2270A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2BF09C42A1C56D700D2270A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2BF09CA2A1C56D700D2270A /* Hotel PrincessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hotel PrincessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BF09CE2A1C56D700D2270A /* Hotel_PrincessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel_PrincessTests.swift; sourceTree = "<group>"; };
+		F2BF09D42A1C56D700D2270A /* Hotel PrincessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hotel PrincessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BF09D82A1C56D700D2270A /* Hotel_PrincessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel_PrincessUITests.swift; sourceTree = "<group>"; };
+		F2BF09DA2A1C56D700D2270A /* Hotel_PrincessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel_PrincessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2BF09F22A1CAEAD00D2270A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F2BF09F42A1CB8EA00D2270A /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		F2BF09F62A1CB97500D2270A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F2BF09F82A1CBA8F00D2270A /* ChkinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChkinView.swift; sourceTree = "<group>"; };
+		F2BF09FC2A1CCB9F00D2270A /* YUniverse-B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YUniverse-B.otf"; sourceTree = "<group>"; };
+		F2BF09FD2A1CCB9F00D2270A /* YUniverse-L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YUniverse-L.otf"; sourceTree = "<group>"; };
+		F2BF0A052A1CCD4900D2270A /* Hotel-Princess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hotel-Princess-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F2BF0A072A1D03C200D2270A /* RoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
+		F2BF0A102A1D230200D2270A /* CheckinDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinDTO.swift; sourceTree = "<group>"; };
+		F2BF0A182A1D252500D2270A /* UnderlineTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldView.swift; sourceTree = "<group>"; };
+		F2BF0A1C2A2643FB00D2270A /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		F2BF0A202A265BCA00D2270A /* CinzelDecorative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Bold.ttf"; sourceTree = "<group>"; };
+		F2BF0A242A2667E600D2270A /* RoomStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStatus.swift; sourceTree = "<group>"; };
+		F2BF0A282A28E86900D2270A /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		F2BF0A2C2A28EA8E00D2270A /* TimerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRequest.swift; sourceTree = "<group>"; };
+		F2BF0A302A28EAA900D2270A /* AirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQuality.swift; sourceTree = "<group>"; };
+		F2BF0A372A2AE0BE00D2270A /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		F2BF0A3B2A2AE4C000D2270A /* DesignModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2BF09B72A1C56D400D2270A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF09F12A1CA2C900D2270A /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF09C72A1C56D700D2270A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF09D12A1C56D700D2270A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2BF09B12A1C56D400D2270A = {
+			isa = PBXGroup;
+			children = (
+				F2BF09BC2A1C56D400D2270A /* Hotel Princess */,
+				F2BF09CD2A1C56D700D2270A /* Hotel PrincessTests */,
+				F2BF09D72A1C56D700D2270A /* Hotel PrincessUITests */,
+				F2BF09BB2A1C56D400D2270A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2BF09BB2A1C56D400D2270A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF09BA2A1C56D400D2270A /* Hotel Princess.app */,
+				F2BF09CA2A1C56D700D2270A /* Hotel PrincessTests.xctest */,
+				F2BF09D42A1C56D700D2270A /* Hotel PrincessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2BF09BC2A1C56D400D2270A /* Hotel Princess */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF0A052A1CCD4900D2270A /* Hotel-Princess-Info.plist */,
+				F2BF09FA2A1CCB1500D2270A /* Fonts */,
+				F2BF0A352A28EBB500D2270A /* Controller */,
+				F2BF0A342A28EB4A00D2270A /* Entity,DTO */,
+				F2BF0A362A28EBEE00D2270A /* layout */,
+				F2BF09FB2A1CCB1C00D2270A /* Views */,
+				F2BF09BD2A1C56D400D2270A /* Hotel_PrincessApp.swift */,
+				F2BF09C12A1C56D700D2270A /* Assets.xcassets */,
+				F2BF09C32A1C56D700D2270A /* Preview Content */,
+			);
+			path = "Hotel Princess";
+			sourceTree = "<group>";
+		};
+		F2BF09C32A1C56D700D2270A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF09C42A1C56D700D2270A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2BF09CD2A1C56D700D2270A /* Hotel PrincessTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF09CE2A1C56D700D2270A /* Hotel_PrincessTests.swift */,
+			);
+			path = "Hotel PrincessTests";
+			sourceTree = "<group>";
+		};
+		F2BF09D72A1C56D700D2270A /* Hotel PrincessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF09D82A1C56D700D2270A /* Hotel_PrincessUITests.swift */,
+				F2BF09DA2A1C56D700D2270A /* Hotel_PrincessUITestsLaunchTests.swift */,
+			);
+			path = "Hotel PrincessUITests";
+			sourceTree = "<group>";
+		};
+		F2BF09FA2A1CCB1500D2270A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF0A202A265BCA00D2270A /* CinzelDecorative-Bold.ttf */,
+				F2BF09FC2A1CCB9F00D2270A /* YUniverse-B.otf */,
+				F2BF09FD2A1CCB9F00D2270A /* YUniverse-L.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F2BF09FB2A1CCB1C00D2270A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF09F22A1CAEAD00D2270A /* SplashView.swift */,
+				F2BF09F42A1CB8EA00D2270A /* StartView.swift */,
+				F2BF09F82A1CBA8F00D2270A /* ChkinView.swift */,
+				F2BF09F62A1CB97500D2270A /* MainView.swift */,
+				F2BF0A1C2A2643FB00D2270A /* MusicView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2BF0A342A28EB4A00D2270A /* Entity,DTO */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF0A282A28E86900D2270A /* Guest.swift */,
+				F2BF0A242A2667E600D2270A /* RoomStatus.swift */,
+				F2BF0A302A28EAA900D2270A /* AirQuality.swift */,
+				F2BF0A102A1D230200D2270A /* CheckinDTO.swift */,
+				F2BF0A372A2AE0BE00D2270A /* SongList.swift */,
+			);
+			path = "Entity,DTO";
+			sourceTree = "<group>";
+		};
+		F2BF0A352A28EBB500D2270A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF0A072A1D03C200D2270A /* RoomController.swift */,
+				F2BF0A2C2A28EA8E00D2270A /* TimerRequest.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2BF0A362A28EBEE00D2270A /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF0A182A1D252500D2270A /* UnderlineTextFieldView.swift */,
+				F2BF0A3B2A2AE4C000D2270A /* DesignModifier.swift */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2BF09B92A1C56D400D2270A /* Hotel Princess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BF09DE2A1C56D700D2270A /* Build configuration list for PBXNativeTarget "Hotel Princess" */;
+			buildPhases = (
+				F2BF09B62A1C56D400D2270A /* Sources */,
+				F2BF09B72A1C56D400D2270A /* Frameworks */,
+				F2BF09B82A1C56D400D2270A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hotel Princess";
+			packageProductDependencies = (
+				F2BF09F02A1CA2C900D2270A /* Alamofire */,
+			);
+			productName = "Hotel Princess";
+			productReference = F2BF09BA2A1C56D400D2270A /* Hotel Princess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2BF09C92A1C56D700D2270A /* Hotel PrincessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BF09E12A1C56D700D2270A /* Build configuration list for PBXNativeTarget "Hotel PrincessTests" */;
+			buildPhases = (
+				F2BF09C62A1C56D700D2270A /* Sources */,
+				F2BF09C72A1C56D700D2270A /* Frameworks */,
+				F2BF09C82A1C56D700D2270A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2BF09CC2A1C56D700D2270A /* PBXTargetDependency */,
+			);
+			name = "Hotel PrincessTests";
+			productName = "Hotel PrincessTests";
+			productReference = F2BF09CA2A1C56D700D2270A /* Hotel PrincessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2BF09D32A1C56D700D2270A /* Hotel PrincessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BF09E42A1C56D700D2270A /* Build configuration list for PBXNativeTarget "Hotel PrincessUITests" */;
+			buildPhases = (
+				F2BF09D02A1C56D700D2270A /* Sources */,
+				F2BF09D12A1C56D700D2270A /* Frameworks */,
+				F2BF09D22A1C56D700D2270A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2BF09D62A1C56D700D2270A /* PBXTargetDependency */,
+			);
+			name = "Hotel PrincessUITests";
+			productName = "Hotel PrincessUITests";
+			productReference = F2BF09D42A1C56D700D2270A /* Hotel PrincessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2BF09B22A1C56D400D2270A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F2BF09B92A1C56D400D2270A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F2BF09C92A1C56D700D2270A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F2BF09B92A1C56D400D2270A;
+					};
+					F2BF09D32A1C56D700D2270A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F2BF09B92A1C56D400D2270A;
+					};
+				};
+			};
+			buildConfigurationList = F2BF09B52A1C56D400D2270A /* Build configuration list for PBXProject "Hotel Princess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2BF09B12A1C56D400D2270A;
+			packageReferences = (
+				F2BF09EF2A1CA2C900D2270A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F2BF09BB2A1C56D400D2270A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2BF09B92A1C56D400D2270A /* Hotel Princess */,
+				F2BF09C92A1C56D700D2270A /* Hotel PrincessTests */,
+				F2BF09D32A1C56D700D2270A /* Hotel PrincessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2BF09B82A1C56D400D2270A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF0A212A265BCA00D2270A /* CinzelDecorative-Bold.ttf in Resources */,
+				F2BF09C52A1C56D700D2270A /* Preview Assets.xcassets in Resources */,
+				F2BF0A012A1CCB9F00D2270A /* YUniverse-L.otf in Resources */,
+				F2BF09C22A1C56D700D2270A /* Assets.xcassets in Resources */,
+				F2BF09FE2A1CCB9F00D2270A /* YUniverse-B.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF09C82A1C56D700D2270A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF0A222A265BCA00D2270A /* CinzelDecorative-Bold.ttf in Resources */,
+				F2BF09FF2A1CCB9F00D2270A /* YUniverse-B.otf in Resources */,
+				F2BF0A022A1CCB9F00D2270A /* YUniverse-L.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF09D22A1C56D700D2270A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF0A232A265BCA00D2270A /* CinzelDecorative-Bold.ttf in Resources */,
+				F2BF0A002A1CCB9F00D2270A /* YUniverse-B.otf in Resources */,
+				F2BF0A032A1CCB9F00D2270A /* YUniverse-L.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2BF09B62A1C56D400D2270A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF0A382A2AE0BE00D2270A /* SongList.swift in Sources */,
+				F2BF09F92A1CBA8F00D2270A /* ChkinView.swift in Sources */,
+				F2BF0A2D2A28EA8E00D2270A /* TimerRequest.swift in Sources */,
+				F2BF09F52A1CB8EA00D2270A /* StartView.swift in Sources */,
+				F2BF0A312A28EAA900D2270A /* AirQuality.swift in Sources */,
+				F2BF0A292A28E86900D2270A /* Guest.swift in Sources */,
+				F2BF0A1D2A2643FB00D2270A /* MusicView.swift in Sources */,
+				F2BF09F32A1CAEAD00D2270A /* SplashView.swift in Sources */,
+				F2BF0A3C2A2AE4C000D2270A /* DesignModifier.swift in Sources */,
+				F2BF09F72A1CB97500D2270A /* MainView.swift in Sources */,
+				F2BF0A082A1D03C200D2270A /* RoomController.swift in Sources */,
+				F2BF09BE2A1C56D400D2270A /* Hotel_PrincessApp.swift in Sources */,
+				F2BF0A112A1D230200D2270A /* CheckinDTO.swift in Sources */,
+				F2BF0A252A2667E600D2270A /* RoomStatus.swift in Sources */,
+				F2BF0A192A1D252500D2270A /* UnderlineTextFieldView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF09C62A1C56D700D2270A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF0A122A1D230200D2270A /* CheckinDTO.swift in Sources */,
+				F2BF0A1A2A1D252500D2270A /* UnderlineTextFieldView.swift in Sources */,
+				F2BF0A3D2A2AE4C000D2270A /* DesignModifier.swift in Sources */,
+				F2BF0A262A2667E600D2270A /* RoomStatus.swift in Sources */,
+				F2BF0A1E2A2643FB00D2270A /* MusicView.swift in Sources */,
+				F2BF0A392A2AE0BE00D2270A /* SongList.swift in Sources */,
+				F2BF0A2A2A28E86900D2270A /* Guest.swift in Sources */,
+				F2BF09CF2A1C56D700D2270A /* Hotel_PrincessTests.swift in Sources */,
+				F2BF0A322A28EAA900D2270A /* AirQuality.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF09D02A1C56D700D2270A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF0A3A2A2AE0BE00D2270A /* SongList.swift in Sources */,
+				F2BF09DB2A1C56D700D2270A /* Hotel_PrincessUITestsLaunchTests.swift in Sources */,
+				F2BF09D92A1C56D700D2270A /* Hotel_PrincessUITests.swift in Sources */,
+				F2BF0A1B2A1D252500D2270A /* UnderlineTextFieldView.swift in Sources */,
+				F2BF0A1F2A2643FB00D2270A /* MusicView.swift in Sources */,
+				F2BF0A132A1D230200D2270A /* CheckinDTO.swift in Sources */,
+				F2BF0A2B2A28E86900D2270A /* Guest.swift in Sources */,
+				F2BF0A272A2667E600D2270A /* RoomStatus.swift in Sources */,
+				F2BF0A3E2A2AE4C000D2270A /* DesignModifier.swift in Sources */,
+				F2BF0A332A28EAA900D2270A /* AirQuality.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2BF09CC2A1C56D700D2270A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BF09B92A1C56D400D2270A /* Hotel Princess */;
+			targetProxy = F2BF09CB2A1C56D700D2270A /* PBXContainerItemProxy */;
+		};
+		F2BF09D62A1C56D700D2270A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BF09B92A1C56D400D2270A /* Hotel Princess */;
+			targetProxy = F2BF09D52A1C56D700D2270A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2BF09DC2A1C56D700D2270A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2BF09DD2A1C56D700D2270A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2BF09DF2A1C56D700D2270A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hotel Princess/Preview Content\"";
+				DEVELOPMENT_TEAM = T3MRA53A8Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hotel-Princess-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juliajang.Hotel-Princess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F2BF09E02A1C56D700D2270A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hotel Princess/Preview Content\"";
+				DEVELOPMENT_TEAM = T3MRA53A8Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hotel-Princess-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juliajang.Hotel-Princess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F2BF09E22A1C56D700D2270A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3MRA53A8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "undefined.Hotel-PrincessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hotel Princess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hotel Princess";
+			};
+			name = Debug;
+		};
+		F2BF09E32A1C56D700D2270A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3MRA53A8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "undefined.Hotel-PrincessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hotel Princess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hotel Princess";
+			};
+			name = Release;
+		};
+		F2BF09E52A1C56D700D2270A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3MRA53A8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "undefined.Hotel-PrincessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hotel Princess";
+			};
+			name = Debug;
+		};
+		F2BF09E62A1C56D700D2270A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3MRA53A8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "undefined.Hotel-PrincessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hotel Princess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2BF09B52A1C56D400D2270A /* Build configuration list for PBXProject "Hotel Princess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF09DC2A1C56D700D2270A /* Debug */,
+				F2BF09DD2A1C56D700D2270A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BF09DE2A1C56D700D2270A /* Build configuration list for PBXNativeTarget "Hotel Princess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF09DF2A1C56D700D2270A /* Debug */,
+				F2BF09E02A1C56D700D2270A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BF09E12A1C56D700D2270A /* Build configuration list for PBXNativeTarget "Hotel PrincessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF09E22A1C56D700D2270A /* Debug */,
+				F2BF09E32A1C56D700D2270A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BF09E42A1C56D700D2270A /* Build configuration list for PBXNativeTarget "Hotel PrincessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF09E52A1C56D700D2270A /* Debug */,
+				F2BF09E62A1C56D700D2270A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2BF09EF2A1CA2C900D2270A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2BF09F02A1CA2C900D2270A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2BF09EF2A1CA2C900D2270A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F2BF09B22A1C56D400D2270A /* Project object */;
+}

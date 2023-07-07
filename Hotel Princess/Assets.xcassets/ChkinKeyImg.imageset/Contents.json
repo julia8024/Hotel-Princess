@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Chkin_keychain.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
